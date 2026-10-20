@@ -11,7 +11,7 @@
 <main>
   <p class="eyebrow">RUSH: 빛의 원정대</p>
   <h1>개인정보처리방침</h1>
-  <p class="meta">시행일: 2026년 10월 18일</p>
+  <p class="meta">시행일: 2026년 10월 21일</p>
   <nav class="lang" aria-label="언어 / Language">
     <a href="#ko" lang="ko">한국어</a>
     <a href="#en" lang="en">English</a>
@@ -23,14 +23,14 @@
     <h2>1. 요약</h2>
     <ul>
       <li>게임에는 회원가입이나 로그인이 없습니다. 개발자는 이름, 이메일, 전화번호 같은 개인정보를 받지 않습니다.</li>
-      <li>개발자는 게임 데이터를 받는 서버를 운영하지 않습니다. 게임 진행 정보는 이용자의 기기에만 저장됩니다.</li>
+      <li>전체 게임 저장 파일은 기기에 보관합니다. Google Play 버전의 성인 이용자가 별도로 동의하면 선택한 이용 통계·오류 진단 정보는 Firebase로 전송됩니다.</li>
       <li>광고는 Google AdMob이, 인앱 결제는 Google Play가 처리합니다. 이 과정에서 Google이 일부 정보를 수집할 수 있습니다(아래 3·4항).</li>
     </ul>
 
     <h2>2. 기기에만 저장되는 정보</h2>
     <ul>
-      <li><strong>게임 진행 정보</strong>: 스테이지 기록, 골드, 병력과 장비, 설정 등. 앱 내부 저장소에 저장되며 개발자에게 전송되지 않습니다. 이용자가 Android 기기 백업을 켜 두었다면 이 정보가 이용자 본인의 Google 계정 백업에 포함될 수 있습니다.</li>
-      <li><strong>국가와 연령 구분</strong>: 처음 실행할 때 국가와 연령 구분(어린이·청소년·성인)을 선택합니다. 정확한 나이나 생년월일은 묻지 않습니다. 이 값은 광고 보호 수준을 정하는 데만 쓰이며, 기기 백업과 기기 간 이전 대상에서 제외됩니다. 국가 기본값을 제안하기 위해 기기의 SIM·통신망 국가 코드와 언어 설정을 기기 안에서만 확인합니다.</li>
+      <li><strong>게임 진행 정보</strong>: 스테이지 기록, 골드, 병력과 장비, 설정 등. 전체 저장 파일은 앱 내부 저장소에 보관합니다. 아래 선택 분석에 동의하면 일부 진행 이벤트가 전송될 수 있습니다. 이용자가 Android 기기 백업을 켜 두었다면 이 정보가 이용자 본인의 Google 계정 백업에 포함될 수 있습니다.</li>
+      <li><strong>국가와 연령 구분</strong>: 처음 실행할 때 국가와 연령 구분(어린이·청소년·성인)을 선택합니다. 정확한 나이나 생년월일은 묻지 않습니다. 이 값은 광고·결제 보호 및 선택 분석 이용 가능 여부를 정하는 데 쓰이며, 기기 백업과 기기 간 이전 대상에서 제외됩니다. 국가 기본값을 제안하기 위해 기기의 SIM·통신망 국가 코드와 언어 설정을 기기 안에서만 확인합니다.</li>
       <li><strong>테스트 기기 확인</strong>: 개발자가 등록한 테스트 기기인지 확인하기 위해 기기 식별값을 되돌릴 수 없는 해시값으로 바꿔 기기 안에서만 비교합니다. 이 값은 외부로 전송되지 않습니다.</li>
     </ul>
 
@@ -57,20 +57,27 @@
     </ul>
 
     <h2>4. 인앱 결제 (Google Play 버전)</h2>
-    <p>Google Play 버전은 게임 골드 상품을 판매하며, 결제는 Google Play 결제 시스템이 처리합니다. 개발자는 카드 번호 같은 결제수단 정보를 받지 않습니다. 구매를 반영하기 위해 Google Play가 전달하는 구매 정보(상품 ID, 구매 상태, 구매 토큰)를 기기 안에서 확인합니다. 결제 정보 처리는 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>을 따릅니다. 어린이로 선택한 이용자에게는 인앱 결제 기능을 열지 않습니다. 원스토어 버전에는 인앱 결제가 없습니다.</p>
+    <p>Google Play 버전은 골드 10,000개, 2배속 영구 해금, 전투 광고 제거 상품을 판매하며, 결제는 Google Play 결제 시스템이 처리합니다. 개발자는 카드 번호 같은 결제수단 정보를 받지 않습니다. 구매를 반영하기 위해 Google Play가 전달하는 구매 정보(상품 ID, 구매 상태, 구매 토큰)를 기기 안에서 확인합니다. 결제 정보 처리는 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>을 따릅니다. 어린이로 선택한 이용자에게는 인앱 결제 기능을 열지 않습니다. 전투 광고 제거는 전투 배너를 없애고 해당 전투 결과 보너스를 광고 없이 지급합니다. 무료 보급 골드는 구매 후에도 광고 시청이 필요합니다. 원스토어 버전에는 인앱 결제가 없습니다.</p>
 
     <h2>5. 수집하지 않는 정보</h2>
-    <p>게임은 이름, 이메일, 전화번호, 주소록, 사진·파일, 정밀 위치, 마이크·카메라 정보를 요청하거나 수집하지 않습니다. 광고와 결제를 위한 Google 서비스 외에 별도의 분석·추적 도구를 쓰지 않습니다.</p>
+    <p>게임은 이름, 이메일, 전화번호, 주소록, 사진·파일, 정밀 위치, 마이크·카메라 정보를 요청하거나 수집하지 않습니다. Google Play 버전에서는 아래와 같이 성인이 별도로 선택한 Firebase 분석·진단 기능을 사용합니다.</p>
+
+    <h2>5-1. 선택 이용 통계·오류 진단 (Google Play 버전)</h2>
+    <p>성인 이용자는 이용 통계와 오류 진단 전송에 각각 별도로 동의할 수 있습니다. 기본값은 꺼짐이며 거부해도 게임을 이용할 수 있습니다. 아동·청소년은 수집을 차단하고, 원스토어 버전에는 이 Firebase 기능이 없습니다.</p>
+    <p>Google Analytics for Firebase: 앱 인스턴스 식별자, 기기·운영체제·앱 정보, 이용 시간, 화면·전투·보상·강화 이벤트를 게임 흐름 개선 목적으로 처리합니다. Google이 IP 등으로 대략적 지역을 처리할 수 있습니다. 앱은 분석 이벤트에 이름·이메일·정확한 생년월일·국가 및 연령 선택값·구매 토큰·전체 저장 파일을 첨부하지 않습니다. 이 분석 기능으로 광고 ID 수집이나 맞춤형 광고를 활성화하지 않습니다.</p>
+    <p>Firebase Crashlytics: 설치 식별자, 기기·운영체제·앱 정보, 비정상 종료·비치명 오류·ANR 진단을 안정성 개선 목적으로 처리합니다. 웹 화면 오류는 원문 메시지나 URL 없이 고정된 오류 범주로 기록합니다.</p>
+    <p>전송 중 암호화되며 Google LLC가 국외에서 처리할 수 있습니다. 2026년 10월 21일 확인한 Analytics 설정은 이벤트 데이터 2개월, 사용자 데이터 14개월이며 새 사용자 활동 시 사용자 데이터 기간이 재설정됩니다. 합산 표준 보고서는 이 기간의 영향을 받지 않을 수 있습니다. Crashlytics 진단은 Google의 보관 정책(일반적으로 90일)을 따릅니다. 자세한 내용은 <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 안내</a>를 확인해 주세요.</p>
+    <p>설정의 ‘이용 통계·오류 전송’에서 이후 수집을 중단할 수 있습니다. 철회·앱 삭제는 이미 전송된 서버 정보를 함께 삭제하지 않습니다. 처리·삭제 문의는 lovesiny11@gmail.com으로 보내 주세요. 직접 식별 정보를 수집하지 않아 일부 요청을 기존 기록과 연결하기 어려울 수 있습니다.</p>
 
     <h2>6. 제3자 제공과 처리 위탁</h2>
-    <p>개발자는 이용자 정보를 판매하거나 제3자에게 제공하지 않습니다. 위 3·4항의 Google 서비스는 이용자 기기와 Google 사이에서 직접 정보를 처리합니다.</p>
+    <p>개발자는 이용자 정보를 판매하지 않습니다. 광고·결제·선택 분석 및 진단은 Google LLC의 서비스가 처리하며 국외에서 처리될 수 있습니다. 개발자는 Firebase 콘솔에서 동의한 이용자의 통계·진단 정보를 확인할 수 있습니다.</p>
 
     <h2>7. 아동의 개인정보</h2>
     <p>개발자는 아동의 개인정보를 직접 수집하지 않습니다. 어린이로 선택한 이용자에게는 맞춤형 광고를 제공하지 않고, 전체 이용가 등급의 광고만 요청합니다. 보호자께서 문의하실 내용이 있으면 아래 연락처로 알려 주세요.</p>
 
     <h2>8. 보관과 삭제</h2>
     <ul>
-      <li>개발자가 보관하는 이용자 데이터는 없습니다.</li>
+      <li>전체 게임 저장 파일을 개발자 서버에 보관하지 않습니다. 선택한 Firebase 정보의 보관은 아래 설명을 따릅니다.</li>
       <li>기기에 저장된 게임 데이터는 게임 설정의 '데이터 전체 초기화', 앱 삭제, 또는 Android 설정 → 애플리케이션 → RUSH → 저장공간 → 데이터 삭제로 지울 수 있습니다. Android 백업본은 기기와 Google 계정의 백업 설정에서 따로 관리해 주세요.</li>
       <li>Google이 수집한 정보의 보관과 삭제는 Google 정책을 따르며, 광고 ID 삭제·재설정이나 <a href="https://myaccount.google.com/data-and-privacy">Google 계정 데이터 및 개인정보 보호</a>에서 관리할 수 있습니다.</li>
     </ul>
@@ -87,20 +94,20 @@
 
   <article id="en" lang="en">
     <h1 style="margin-top:56px">Privacy Policy</h1>
-    <p class="meta">RUSH: Expedition of Light · Effective October 18, 2026</p>
+    <p class="meta">RUSH: Expedition of Light · Effective October 21, 2026</p>
     <p>This policy explains how the developer (the "Developer") of the Android game RUSH: Expedition of Light (the "Game") handles user information.</p>
 
     <h2>1. Summary</h2>
     <ul>
       <li>The Game has no sign-up or login. The Developer does not receive personal information such as your name, email address or phone number.</li>
-      <li>The Developer does not operate any server that receives game data. Your game progress is stored only on your device.</li>
+      <li>Full saved-game files remain on your device. In the Google Play version, adults can separately opt in to Firebase usage analytics and crash diagnostics.</li>
       <li>Ads are provided by Google AdMob and in-app purchases are processed by Google Play. Google may collect some information in the process (Sections 3 and 4).</li>
     </ul>
 
     <h2>2. Information stored only on your device</h2>
     <ul>
-      <li><strong>Game progress</strong>: stage records, gold, units, equipment and settings. Stored in the app's private storage and never sent to the Developer. If you have Android device backup turned on, this data may be included in your own Google account backup.</li>
-      <li><strong>Country and age category</strong>: on first launch you choose your country and an age category (child, teen or adult). We never ask for your exact age or date of birth. These values are used only to set ad protection levels and are excluded from device backup and device-to-device transfer. To suggest a default country, the Game reads the SIM/network country code and language setting on the device only.</li>
+      <li><strong>Game progress</strong>: stage records, gold, units, equipment and settings. Full saved-game files remain in private app storage. Selected progress events may be transmitted if you opt in to analytics below. If you have Android device backup turned on, this data may be included in your own Google account backup.</li>
+      <li><strong>Country and age category</strong>: on first launch you choose your country and an age category (child, teen or adult). We never ask for your exact age or date of birth. These values determine ad and purchase protection and eligibility for optional analytics and are excluded from device backup and device-to-device transfer. To suggest a default country, the Game reads the SIM/network country code and language setting on the device only.</li>
       <li><strong>Test device check</strong>: to recognize test devices registered by the Developer, the Game converts a device identifier into an irreversible hash and compares it on the device only. It is never transmitted.</li>
     </ul>
 
@@ -127,20 +134,27 @@
     </ul>
 
     <h2>4. In-app purchases (Google Play version)</h2>
-    <p>The Google Play version sells in-game gold, and payments are processed by Google Play's billing system. The Developer never receives payment details such as card numbers. To deliver a purchase, the Game checks the purchase information provided by Google Play (product ID, purchase state and purchase token) on the device. Payment data is handled under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. In-app purchases are not available to users who select child. The ONE store version has no in-app purchases.</p>
+    <p>The Google Play version sells 10,000 gold, permanent 2x battle speed and battle ad removal, and payments are processed by Google Play's billing system. The Developer never receives payment details such as card numbers. To deliver a purchase, the Game checks the purchase information provided by Google Play (product ID, purchase state and purchase token) on the device. Payment data is handled under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. In-app purchases are not available to users who select child. Battle ad removal removes battle banners and grants eligible battle-result bonuses without video. Free supply gold still requires watching an ad. The ONE store version has no in-app purchases.</p>
 
     <h2>5. Information we do not collect</h2>
-    <p>The Game does not request or collect your name, email, phone number, contacts, photos or files, precise location, microphone or camera data. Apart from the Google services used for ads and payments, the Game uses no analytics or tracking tools.</p>
+    <p>The Game does not request or collect your name, email, phone number, contacts, photos or files, precise location, microphone or camera data. The Google Play version supports the separately optional adult-only Firebase features described below.</p>
+
+    <h2>5-1. Optional usage analytics and crash diagnostics (Google Play)</h2>
+    <p>Adults can opt in separately to usage analytics and crash diagnostics. Both are off by default; declining does not limit gameplay. Collection is blocked for children and teens. These Firebase features are absent from the ONE store version.</p>
+    <p>Google Analytics for Firebase processes app-instance identifiers, device/OS/app information, usage time and screen, battle, reward and upgrade events to improve gameplay. Google may derive approximate region from IP information. The app does not attach names, emails, exact birth dates, selected country/age values, purchase tokens or full saved-game files to analytics events. This analytics feature does not enable advertising-ID collection or personalized advertising.</p>
+    <p>Firebase Crashlytics processes installation identifiers, device/OS/app information and crash, nonfatal error and ANR diagnostics to improve stability. Web-view errors use a fixed category without the original message or URL.</p>
+    <p>Data is encrypted in transit and may be processed abroad by Google LLC. Analytics settings verified October 21, 2026 retain event data for 2 months and user data for 14 months, with user retention reset on new user activity. Aggregated standard reports may be unaffected. Crashlytics diagnostics follow Google's retention policy (generally 90 days). See <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
+    <p>Turn off future collection under Usage &amp; diagnostics in settings. Withdrawal or uninstalling does not erase previously transmitted server data. Contact lovesiny11@gmail.com for processing/deletion requests; records may be difficult to associate with a request because direct identity information is not collected.</p>
 
     <h2>6. Sharing</h2>
-    <p>The Developer does not sell or share user information with third parties. The Google services in Sections 3 and 4 process information directly between your device and Google.</p>
+    <p>The Developer does not sell user information. Google LLC processes advertising, payments and optional analytics/diagnostics, potentially outside your country. The Developer can view opted-in analytics and diagnostics in the Firebase console.</p>
 
     <h2>7. Children's privacy</h2>
     <p>The Developer does not directly collect personal information from children. Users who select child receive no personalized ads, and only ads rated G are requested. Parents or guardians with questions can contact us below.</p>
 
     <h2>8. Retention and deletion</h2>
     <ul>
-      <li>The Developer retains no user data.</li>
+      <li>The Developer does not host full saved-game files. Optional Firebase data retention is described below.</li>
       <li>Game data on your device can be deleted with Reset all data in the Game's settings, by uninstalling the app, or in Android Settings → Apps → RUSH → Storage → Clear data. Android backups are managed separately in your device and Google account backup settings.</li>
       <li>Information collected by Google is retained and deleted under Google's policies. You can manage it by resetting or deleting your advertising ID or from <a href="https://myaccount.google.com/data-and-privacy">Google Account data &amp; privacy</a>.</li>
     </ul>
