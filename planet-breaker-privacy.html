@@ -23,10 +23,12 @@
 <li><strong>게임 기록과 설정:</strong> 최고 점수, 진행·강화·도감·업적 기록, 언어, 소리, 화질 등 게임 이용에 필요한 값을 기기의 앱 저장공간에 보관합니다.</li>
 <li><strong>연령대:</strong> 만 14세 미만, 만 14~17세, 만 18세 이상 중 선택한 구분을 저장하여 광고 보호 수준과 광고 이용 가능 여부를 정합니다. 이름, 정확한 생년월일, 신분증은 요구하지 않습니다. 연령을 선택하지 않으면 광고는 꺼진 상태로 유지됩니다.</li>
 <li><strong>광고 선택:</strong> 광고 정보 처리 허용 여부와 안내 버전을 기기에 저장합니다. Google 동의 도구도 관련 선택을 기기에 저장할 수 있습니다. 메뉴의 ‘개인정보·광고’에서 선택을 변경할 수 있습니다.</li>
+<li><strong>상품·보상 기록:</strong> 선택한 외형, Google Play가 서명한 구매 영수증(상품 ID, 구매 토큰·주문 및 구매 상태 정보, 서명), 보상 광고의 시청 보상 시각·무작위 보상 ID·지급 여부를 기기에 저장하여 구매 복원과 중복 지급 방지에 사용합니다. 광고 보상 ID는 앱에서 생성하며 외부 서버로 전송하지 않습니다.</li>
 </ul>
 <p>개발자는 전체 게임 저장 파일을 서버로 전송받지 않습니다. 앱의 Android 자동 백업은 비활성화되어 있습니다. 기기의 데이터 삭제 시 게임 기록과 광고 선택도 삭제됩니다.</p>
 <h2>3. 광고와 Google 서비스</h2>
 <p>광고 기능이 활성화된 빌드에서는 Google LLC의 AdMob을 통해 시작·결과 메뉴에 배너를 요청할 수 있습니다. 전투 중에는 배너를 제거합니다. 개발·검증용 빌드는 테스트 광고를 사용하며 실제 광고 게재 가능 여부는 계정 설정과 Google의 검토 상태에 따라 달라집니다.</p>
+<p>결과 화면에서 이용자가 선택하면 보상형 광고를 요청합니다. 완료 보상은 게임 안에서만 사용할 수 있는 광물 300개이며, 판당 1회·24시간당 최대 3회로 제한합니다. 현금 교환이나 양도는 지원하지 않습니다. 메뉴 광고 제거 상품은 배너를 제거하며, 선택형 보상 광고는 계속 선택할 수 있습니다. 광고 정보 처리에 동의하지 않아도 무료 게임 이용은 가능합니다.</p>
 <p>광고를 허용하면 Google은 광고 제공, 성과 측정, 안정성 관리 및 부정 사용 방지를 위해 IP 주소와 그로부터 추정한 대략적 위치, 앱·광고 상호작용, 앱 세트 ID 등 기기 식별 정보, 기기·앱 정보 및 진단 정보를 처리할 수 있습니다. 테스트 광고와 비맞춤형 광고도 일부 정보를 처리할 수 있습니다.</p>
 <p>이 앱은 맞춤형 광고를 요청하지 않고, 광고 ID 및 Android 광고 서비스의 ID·관심 주제·기여 분석 권한을 포함하지 않습니다. 정밀 위치, 연락처, 사진, 카메라, 마이크 권한도 요청하지 않습니다. 이러한 제한이 광고 SDK의 모든 정보 처리를 없애는 것은 아닙니다.</p>
 <p>Google UMP 동의 도구는 지역별 동의 필요 여부와 선택을 관리합니다. 광고를 허용한 이용자에 대해 실행 시 동의 상태를 갱신하고, 필요한 경우 Google 화면을 표시합니다. 동의 상태 확인에 실패하거나 광고 요청이 허용되지 않으면 광고를 요청하지 않습니다. 지역별 광고 선택 버튼이 필요한 경우 ‘개인정보·광고’에서 Google 광고 동의 관리를 열 수 있습니다.</p>
@@ -34,8 +36,9 @@
 <h2>4. 어린이와 청소년</h2>
 <p>만 14세 미만으로 선택한 이용자에게는 현재 광고 SDK의 초기화나 광고 요청을 진행하지 않습니다. 어린이 대상 광고 및 G 등급 제한 설정은 준비되어 있으나, 필요한 보호자 동의 확인 절차가 연결되기 전에는 어린이 광고를 활성화하지 않습니다. 연령 선택이나 일반 체크박스를 검증된 보호자 동의로 취급하지 않습니다.</p>
 <p>만 14~17세는 광고 요청 시 동의 연령 미만 설정을 적용합니다. 모든 연령에 비맞춤형 광고와 최대 G 등급 제한을 적용합니다. 광고를 거부하거나 이용할 수 없어도 게임은 실행됩니다.</p>
-<h2>5. 별도 분석·결제 및 문의</h2>
-<p>현재 Planet Breaker에는 회원 계정, 인앱 결제, Firebase Analytics 또는 Crashlytics가 없습니다. 광고 SDK에서 처리하는 진단 정보는 3항과 같습니다. 앱은 게임 이용을 위해 이름·이메일·전화번호 입력을 요구하지 않습니다.</p>
+<h2>5. 인앱 결제·별도 분석 및 문의</h2>
+<p>버전 1.4부터 선택형 일회성 상품(메뉴 광고 제거, 외형 꾸미기, 서포터 팩)용 Google Play Billing을 포함합니다. 스토어 등록·상품 검증 전에는 ‘판매 준비 중’으로 표시되며 결제를 실행하지 않습니다. 구매 기능은 앱에서 만 18세 이상으로 선택한 이용자에게 제공됩니다. 게임 회원 계정, Firebase Analytics와 Crashlytics는 사용하지 않습니다.</p>
+<p>구매 기능이 활성화되면 Google Play가 Google 계정과 결제·거래 정보를 처리합니다. 앱은 카드 번호나 결제 비밀번호를 직접 입력받거나 보관하지 않습니다. 앱은 Google Play로부터 상품·현지 가격·구매 상태와 서명된 영수증을 받아 구매 확인, 기능 제공, 복원에 사용합니다. 기기를 다시 사용하거나 앱을 재설치한 경우 같은 Google Play 계정으로 ‘구매 복원’을 이용할 수 있습니다. 게임 진행·광물은 별도 기기 간 복원 대상이 아닙니다. Google의 거래 기록은 앱 데이터 삭제만으로 삭제되지 않으며 관련 법령과 Google 정책에 따라 보관될 수 있습니다. 자세한 내용은 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>을 확인해 주세요.</p>
 <p>이메일로 문의하는 경우 이용자가 보낸 회신 주소와 문의 내용은 문의 응대 및 요청 처리에 사용됩니다. 민감한 정보나 비밀번호를 보내지 마세요. 문의 기록의 처리·삭제도 같은 연락처로 요청할 수 있습니다.</p>
 <h2>6. 보관·삭제와 선택 변경</h2>
 <ul>
@@ -56,10 +59,12 @@
 <li><strong>Progress and settings:</strong> high scores, progress, upgrades, collection and achievement records, language, sound and quality settings are stored in the app's device storage.</li>
 <li><strong>Age category:</strong> under 14, 14–17 or 18 and older determines ad protection and eligibility. No name, exact birth date or identity document is requested. Unknown age keeps ads off.</li>
 <li><strong>Ad preference:</strong> your optional advertising choice and notice version are stored locally. Google's consent tool may also store related choices on the device. You can change choices under Privacy &amp; ads.</li>
+<li><strong>Products and rewards:</strong> selected styles, Google Play-signed receipts (product IDs, purchase tokens, order/purchase status and signatures), reward timestamps, random reward IDs and delivery records are stored on the device to restore purchases and prevent duplicate rewards. App-generated reward IDs are not sent to an external server.</li>
 </ul>
 <p>The developer does not receive your full saved-game file on a server. Android automatic backup is disabled for this app. Clearing app data deletes progress and ad preferences.</p>
 <h2>3. Advertising and Google services</h2>
 <p>Builds with advertising enabled may request a menu banner through Google LLC's AdMob on the title and results screens. The banner is removed during play. Development builds use demo ads; live ad availability depends on account configuration and Google's review.</p>
+<p>A rewarded ad is requested only when you choose it on the results screen. Completion grants 300 minerals usable only within this game, limited to once per run and up to three times per 24 hours. Rewards cannot be transferred or exchanged for cash. The menu-ad-removal product removes banners; rewarded ads remain optional. Declining advertising data processing does not prevent free gameplay.</p>
 <p>If you allow advertising, Google may process IP addresses and approximate location derived from them, app and ad interactions, identifiers such as app set ID, device/app information and diagnostics for ad delivery, measurement, reliability and fraud prevention. Test ads and non-personalized ads can still process some information.</p>
 <p>This app requests non-personalized ads and excludes advertising-ID and Android Ad Services ID, Topics and Attribution permissions. It does not request precise location, contacts, photos, camera or microphone permissions. These restrictions do not eliminate all processing by the ad SDK.</p>
 <p>Google's UMP consent tool manages regional requirements and choices. For users who allow ads, the app updates consent status on launch and displays a Google form when required. If the update fails or ad requests are not permitted, ads remain off. Where required, Google's privacy-options form is accessible under Privacy &amp; ads.</p>
@@ -67,8 +72,9 @@
 <h2>4. Children and teens</h2>
 <p>For users selecting under 14, the current app does not initialize the ad SDK or request ads. Child-directed and G-rated settings are prepared, but child advertising remains disabled until an appropriate verified guardian-consent process is connected. An age choice or ordinary checkbox is not treated as verified parental consent.</p>
 <p>Users aged 14–17 receive under-age-of-consent ad settings. All ages use non-personalized requests and maximum content rating G. Declining or being ineligible for ads does not prevent gameplay.</p>
-<h2>5. Other services and support</h2>
-<p>Planet Breaker currently has no user accounts, in-app purchases, Firebase Analytics or Crashlytics. Advertising SDK diagnostics are described above. The game does not require a name, email address or phone number.</p>
+<h2>5. Purchases, other services and support</h2>
+<p>Version 1.4 includes Google Play Billing for optional one-time products: menu-ad removal, ship styles and a supporter pack. Until store registration and product testing are complete, products are marked Coming soon and payments cannot be launched. Purchases are available to users selecting age 18 or older in the app. The game does not use its own user accounts, Firebase Analytics or Crashlytics.</p>
+<p>When purchases are enabled, Google Play processes Google account, payment and transaction information. The app does not collect or store card numbers or payment passwords. It receives product details, localized prices, purchase status and signed receipts from Google Play to verify purchases, deliver features and restore access. Use Restore purchases with the same Google Play account after reinstalling or changing devices. Game progress and minerals are not restored across devices. Clearing app data does not delete Google's transaction records, which may be retained according to applicable law and Google's policies. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 <p>If you email support, the reply address and information you provide are used to respond and handle your request. Do not send sensitive information or passwords. You may ask about processing or deletion of support correspondence at the same address.</p>
 <h2>6. Retention, deletion and withdrawal</h2>
 <ul>
